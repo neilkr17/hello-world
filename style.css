@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", Courier, monospace;
+  font-size: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0082e6;
+  /* background-attachment: url("./images/lettuce.jpg"); */
+  height: auto;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0082e6;
+  height: 125px;
+  width: 100%;
+  padding: 1rem;
+}
+.footerImg {
+  display: inline;
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  position: absolute;
+  clip: rect(0px, 70px, 200px, 0px);
+  border: 0.5px solid white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+nav ul {
+  display: flex;
+  margin-right: 2rem;
+  /* float: right; */
+}
+nav ul li {
+  display: inline;
+  line-height: 60px;
+  margin: 0 5px;
+  padding-left: 2rem;
+  list-style: none;
+  text-transform: uppercase;
+}
+.header nav ul li a {
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.footer nav ul li a {
+  font-size: 12px;
+  float: right;
+}
+h1 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 70px;
+  padding: 0 80px;
+  text-transform: uppercase;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+}
+.link:active,
+.link:hover {
+  background-color: #1b9bff;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.navBtn {
+  display: none;
+  font-size: 32px;
+  color: #fff;
+  line-height: 85px;
+  float: right;
+  margin-right: 35px;
+  cursor: pointer;
+}
+#checkBox {
+  display: none;
+}
+.container {
+  display: flex;
+  background-image: url("./images/20200912_230837.jpg");
+  background-repeat: none;
+  background-position: left;
+  background-attachment: inherit;
+  filter: opacity(90%);
+  width: 100%;
+  height: auto;
+  -webkit-filter: opacity(90%);
+}
+
+.socialLink {
+  text-align: center;
+  text-decoration: underline;
+  color: white;
+}
+.social-link:hover,
+.social-link:active {
+  color: #183153;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.studentDetails {
+  font-family: bold;
+  color: white;
+  margin-left: 5rem;
+}
+.studentDiv {
+  font-size: 12px;
+  color: white;
+}
+.copyright {
+  color: white;
+  text-decoration: underline;
+}
+.main {
+  /* background: #0082e6; */
+  line-height: 2;
+  margin: 2rem 2rem 1rem 1rem;
+  border-radius: 5px;
+  width: 60%;
+  height: auto;
+  padding: 3rem;
+  text-align: justify;
+  text-indent: inherit;
+  letter-spacing: normal;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+  font-variant: normal;
+  font-weight: bold;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.signUp {
+  border-left: 1px solid;
+  border-left-color: white;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right: 1px solid;
+  border-right-color: #fff;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top: 1px solid;
+  border-top-color: #fff;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-bottom: 1px solid;
+  border-bottom-color: #fff;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+
+  margin: 5rem;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 30%;
+  padding: 2rem;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+form label {
+  margin: 1rem;
+  margin-right: 2rem;
+  float: left;
+}
+form input {
+  margin: 1rem;
+  border-radius: 5px;
+  padding: 5px;
+  outline: none;
+  float: left;
+}
+form textarea {
+  margin: 1rem;
+  border-radius: 5px;
+  padding: 5px;
+  outline: none;
+}
+.btnSubmit {
+  background: #006919;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.5rem;
+  outline: none;
+  margin-top: 2rem;
+  float: right;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.btnSubmit:hover,
+.btnSubmit:active {
+  background-color: blue;
+}
+
+@media (max-width: 952px) {
+  h1 {
+    font: size 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 14px;
+  }
+  .navBtn {
+    display: block;
+    margin-left: 2rem;
+    float: right;
+  }
+  .header nav ul {
+    display: none;
+  }
+}
